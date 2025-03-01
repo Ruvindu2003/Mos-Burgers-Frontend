@@ -1,0 +1,313 @@
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header / Hero Section */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.hero {
+    background-image: url('https://img.freepik.com/premium-photo/hamburger-with-picture-word-burger-it_111797-1442.jpg?w=826');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    color: white;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+.shop-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6b6b;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+
+/* Menu section styles */
+#menu {
+    padding: 50px;
+    text-align: center;
+}
+
+#menu h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.burger-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Card styles */
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.cart {
+    position: fixed;
+    top: 20%;
+    right: 20px;
+    width: 300px;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 1000;
+}
+
+.cart-header, .cart-footer {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.cart-items {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.item-info {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.item-info img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.units {
+    display: flex;
+    align-items: center;
+}
+
+.units .btn {
+    background-color: #ccc;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.units .btn:hover {
+    background-color: #aaa;
+}
+
+.units .number {
+    margin: 0 10px;
+}
+
+
+.enabled-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.enabled-btn:hover {
+    background-color: #45a049;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 50px;
+}
+
+/* Cart Styles */
+.cart {
+    position: fixed;
+    top: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    width: 300px; /* Width of the cart */
+    background-color: #fff; /* Background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for a lifted look */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Prevents overflow */
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+.cart-header {
+    background-color: #f5f5f5; /* Header background color */
+    padding: 10px;
+    font-weight: bold; /* Make header text bold */
+    text-align: center; /* Center align header text */
+}
+
+.cart-items {
+    max-height: 400px; /* Maximum height of cart items area */
+    overflow-y: auto; /* Allow scrolling if too many items */
+    padding: 10px; /* Padding inside the cart items area */
+}
+
+.cart-item {
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Center items vertically */
+    margin-bottom: 10px; /* Space between items */
+    border-bottom: 1px solid #ddd; /* Divider line between items */
+    padding-bottom: 10px; /* Padding for items */
+}
+
+.cart-item img {
+    width: 50px; /* Fixed width for images */
+    height: 50px; /* Fixed height for images */
+    object-fit: cover; /* Cover the space without distortion */
+    margin-right: 10px; /* Space between image and text */
+}
+
+.cart-item-details {
+    flex: 1; /* Take remaining space */
+}
+
+.cart-item-details h4 {
+    margin: 0; /* Remove default margin */
+    font-size: 16px; /* Font size for item name */
+}
+
+.cart-item-details p {
+    margin: 5px 0; /* Space between paragraphs */
+}
+
+.cart-footer {
+    padding: 10px; /* Padding for footer */
+    background-color: #f5f5f5; /* Footer background color */
+    text-align: center; /* Center align footer text */
+    font-weight: bold; /* Make footer text bold */
+}
+
+.subtotal {
+    margin-bottom: 10px; /* Space below subtotal */
+}
+
+.checkout {
+    background-color: #007bff; /* Checkout button color */
+    color: white; /* Button text color */
+    padding: 10px; /* Padding for button */
+    border-radius: 5px; /* Rounded corners for button */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.checkout:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+/* Styles for the checkout table */
+#checkoutTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+    background-color: #f9f9f9;
+}
+
+#checkoutTable thead tr {
+    background-color: #333;
+    color: #fff;
+}
+
+#checkoutTable th,
+#checkoutTable td {
+    border: 1px solid #ddd;
+    padding: 12px;
+}
+
+#checkoutTable tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#checkoutTable tbody tr:hover {
+    background-color: #ddd;
+}
+
+/* Subtotal section */
+.subtotal {
+    margin-right: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.subtotal strong {
+    color: #333;
+}
+
+#btn-addnewitems{
+    display: flex;
+    justify-content: end;
+    padding-right: 20px;
+}
+
+#ConfirmOrder{
+    display: flex;
+    justify-content: end;
+    padding-right: 20px;
+    margin-bottom: 20px;
+}
