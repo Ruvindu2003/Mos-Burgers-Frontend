@@ -5,7 +5,6 @@ async function register() {
     const password = document.getElementById('password').value;
     const confirmPassword = document.getElementById('confirm-password').value;
 
-    // Basic client-side validation
     if (password !== confirmPassword) {
         Swal.fire({
             icon: 'error',

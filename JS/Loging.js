@@ -1,5 +1,5 @@
 function login() {
-    // Get the values from the login form
+
     const name = document.getElementById('username').value;
     console.log(name);
     
@@ -15,7 +15,7 @@ function login() {
     })
     .then(response => response.text()) 
     .then(data => {
-        // Handle the response from the backend
+        
         if (data === "Login successful!") {
        
             Swal.fire({
@@ -27,7 +27,7 @@ function login() {
                 window.location.href = '/index.html'; 
             });
         } else {
-            // Use SweetAlert2 to show an error message
+            
             Swal.fire({
                 icon: 'error',
                 title: 'Login Failed',
